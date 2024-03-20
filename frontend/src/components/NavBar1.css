@@ -1,0 +1,25 @@
+.landnavbar {
+  position: relative;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Montserrat", sans-serif;
+}
+
+.landnavbar-brand {
+  padding: 0 15px;
+}
+.landnavbar-brand:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.landnav-link {
+  color: #fff;
+  padding: 05rem 1rem;
+}
+
+.landnav-link:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+}

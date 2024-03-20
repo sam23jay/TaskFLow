@@ -1,0 +1,76 @@
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import "./ViewTaskPage.css";
+import RightPanelComponent from "./components/RightPanelComponent";
+import NavBar from "./components/NavBar";
+import { Button } from "reactstrap";
+import PopUpWindow from "./components/PopUpWindow";
+
+function ViewTaskPage() {
+  const [expandedItem, setExpandedItem] = useState(null);
+  const [showPopUp, setShowPopUp] = useState(false);
+  const [itemList, setItemList] = useState([]);
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const response = await axios.get("http://localhost:8080/task/get");
+      setItemList(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const handleItemClick = (itemId) => {
+    setExpandedItem(itemId);
+  };
+
+  const openPopUp = () => {
+    setShowPopUp(true);
+  };
+
+  const closePopUp = () => {
+    setShowPopUp(false);
+  };
+
+  const handleAddItem = (newItem) => {
+    setItemList([...itemList, newItem]);
+  };
+
+  return (
+    <div className="chat-page">
+      <NavBar />
+      <div className="left-panel">
+        <Button onClick={openPopUp} className="AddTaskbucket">
+          Add Task
+        </Button>
+        {showPopUp && (
+          <PopUpWindow onClose={closePopUp} onAddItem={handleAddItem} />
+        )}
+
+        <ul className="task-list12"></ul>
+        <ul className="item-list12">
+          {itemList.map((item) => (
+            <li
+              key={item.id}
+              className={`item ${expandedItem === item.id ? "active" : ""}`}
+              onClick={() => handleItemClick(item.id)}
+            >
+              {item.taskName}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div className="right-panel">
+        {expandedItem !== null && (
+          <RightPanelComponent id={expandedItem}></RightPanelComponent>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default ViewTaskPage;

@@ -1,0 +1,101 @@
+.Signup-total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  color: azure;
+  background-color: black;
+  text-align: left;
+}
+
+.Signup-total > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.Signup-total > div label {
+  width: 190%;
+}
+
+.Laker-login {
+  background-color: #09e640;
+  border-color: #09e640;
+  width: 135px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 50px;
+  margin-top: 1rem; 
+}
+.Laker-login:hover {
+  background-color: #0aa81d;
+  border-color: #0aa81d;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+}
+.SignUp-Basic-Inputs {
+  border-color: rgb(43, 42, 42);
+  width: 200%;
+  height: 3rem;
+  background-color: rgb(43, 42, 42);
+  color: white;
+  box-shadow: 0 0 0 0px #09e640;
+  margin-top: 1rem;
+  margin-bottom: 1rem; 
+}
+.SignUp-Basic-Inputs::placeholder {
+  color: #929292;
+}
+
+.SignUp-Basic-Inputs:focus {
+  border-color: rgb(0, 0, 0);
+  width: 200%;
+  height: 3rem;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  box-shadow: 0 0 0 3px #09e640;
+  border-color: rgb(12, 238, 12);
+}
+.SignUp-Basic-Inputs::before {
+  color: azure;
+  box-shadow: 0 0 0 3px #09e640;
+}
+.SignUp-Basic-Inputs::after {
+  box-shadow: 0 0 0 3px #09e640;
+}
+.Dropdowncss {
+  background-color: #09e640;
+  border-radius: 50px;
+  border-color: #09e640;
+}
+.Dropdowncss:hover {
+  background-color: #0aa81d;
+  border-color: #0aa81d;
+}
+.checkbox-container1 {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+}
+.error-message {
+  color: red;
+}
+.create_pro {
+
+  font-size: 40px;
+}
+.hreflogin {
+  display: flex;
+  margin-top: 10px;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+.hreflogin:hover {
+  color: #09e640;
+  text-decoration: underline;
+}

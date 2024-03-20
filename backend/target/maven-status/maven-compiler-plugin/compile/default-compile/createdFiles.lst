@@ -1,0 +1,15 @@
+com\example\demo\controller\ResetPasswordController.class
+com\example\demo\entity\ResetPasswordEntity.class
+com\example\demo\repository\LoginRepository.class
+com\example\demo\controller\TaskController.class
+com\example\demo\entity\SignUpEntity.class
+com\example\demo\entity\TaskEntity$Status.class
+com\example\demo\entity\TaskEntity.class
+com\example\demo\repository\ResetPasswordRepository.class
+com\example\demo\controller\SignUpController.class
+com\example\demo\repository\SignUpRepository.class
+com\example\demo\controller\LoginController.class
+com\example\demo\entity\TaskEntity$Priority.class
+com\example\demo\entity\LoginEntity.class
+com\example\demo\ReactStsApplication.class
+com\example\demo\repository\TaskRepository.class

@@ -1,0 +1,79 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; 
+}
+
+.popup-container {
+  display: block;
+
+  background-color: #2e2929;
+  padding: 20px;
+  max-height: fit-content;
+  max-width: 800px;
+  border-radius: 50px;
+}
+.popup-container h1 {
+  margin-top: 0;
+}
+.popup-content {
+  color: white;
+}
+.TaskAddButton {
+  background-color: #09e640;
+  border-color: #09e640;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+}
+.TaskAddButton:hover {
+  background-color: #0aa81d;
+  border-color: #0aa81d;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+}
+.TaskAddButton1 {
+  background-color: #f40a0a;
+  border-color: #f40a0a;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+  margin-left: 10px;
+}
+.TaskAddButton1:hover {
+  background-color: #c60b0b;
+  border-color: #c60b0b;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+}
+
+.TaskCancelButton {
+  background-color: #fc0707;
+  border-color: #fc0707;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+  font-size: 22px;
+  margin-left: 16px;
+}
+.TaskCancelButton:hover {
+  background-color: #dc1d1d;
+  border-color: #dc1d1d;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+  font-size: 22px;
+}

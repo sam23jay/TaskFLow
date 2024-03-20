@@ -1,0 +1,77 @@
+.Land-Body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  height: 100%;
+  margin: 0px;
+}
+
+.flex-container {
+  display: flex;
+  height: 100%;
+}
+
+.bg-image {
+  background-image: url("NvL.gif");
+  background-size: cover;
+  position: relative;
+  flex: 1;
+  height: 100vh;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.we-can-fix {
+  border-radius: 50px;
+  color: aliceblue;
+  font-size: 350%;
+  text-align: justify;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.trusted-verified-and {
+  border-radius: 50px;
+  color: aliceblue;
+  font-size: 150%;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.sign-up-button13,
+.login-button13 {
+  margin-bottom: 20px;
+}
+
+.login-land11,
+.registerbuttonland {
+  background-color: #09e640;
+  border-color: #09e640;
+  width: 135px;
+  height: 50px;
+  font-size: 22px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: white;
+}
+
+.login-land11:hover,
+.registerbuttonland:hover {
+  background-color: #0aa81d;
+  border-color: #0aa81d;
+  font-size: 22px;
+  border-radius: 50px;
+  width: 135px;
+  height: 50px;
+}

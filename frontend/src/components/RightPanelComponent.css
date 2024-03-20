@@ -1,0 +1,72 @@
+.item-expansion {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: rgb(255, 255, 255);
+}
+
+.item-expansion p {
+  margin-bottom: 10px;
+}
+
+.item-details {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+
+.item-details label {
+  font-weight: 100;
+  font-size: 35px;
+}
+
+.item-details .due-date {
+  color: #007bff;
+}
+
+.item-details .due-time {
+  color: #17a2b8;
+}
+
+.item-details .status {
+  color: #28a745;
+}
+
+.item-details .priority {
+  color: #dc3545;
+}
+
+.markButton {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 11px;
+  margin-right: 100px;
+  font-size: 20px;
+}
+
+.markButton:hover {
+  background-color: #218838;
+}
+
+.binpos {
+  margin-right: 170px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.binpos .BinButton {
+  padding: 8px;
+  margin-top: -30px;
+}
+.Headd {
+  font-size: 50px;
+  font-weight: 600;
+}
+.headpositionrightpanel {
+  margin-top: -30px;
+}
