@@ -29,13 +29,11 @@ public class TaskController {
 
     @GetMapping("/get/foreign/{userId}")
     public List<TaskEntity> getTasksByUserId(@PathVariable("userId") Long userId) {
-        // Call the taskRepository to retrieve tasks by user ID
         List<TaskEntity> tasks = taskRepository.findByUserId(userId);
         return tasks;
     }
     @GetMapping("/get/foreign/{userId}/{priority}")
     public List<TaskEntity> getTasksByUserIdAndPriority(@PathVariable("userId") Long userId, @PathVariable("priority") Priority priority) {
-        // Call the taskRepository to retrieve tasks by user ID
         List<TaskEntity> tasks = taskRepository.findByUserIdAndPriority(userId,priority);
         return tasks;
     } 
